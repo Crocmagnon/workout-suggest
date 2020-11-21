@@ -6,7 +6,11 @@
     <h1>Random exercises</h1>
     <ul>
         {% for exercise in exercises %}
-            <li>{{ exercise.name }}: {{ exercise.get_body_regions }} ({{ exercise.rating }}/5)</li>
+            <li>{{ exercise.get_body_regions }}: {{ exercise.name }} ({{ exercise.rating }}/5)</li>
         {% endfor %}
     </ul>
+    <form action="" method="get">
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+    </form>
 {% endblock %}

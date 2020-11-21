@@ -11,10 +11,10 @@ class BodyRegion(models.Model):
 
 class ExerciseManager(models.Manager):
     def get_mostly_cardio(self):
-        return self.all().filter(rating__gt=3)
+        return self.all().filter(rating__gte=3)
 
     def get_mostly_strengthening(self):
-        return self.all().filter(rating__lt=3)
+        return self.all().filter(rating__lte=3)
 
     def get_balanced(self):
         return self.all().filter(rating=3)
