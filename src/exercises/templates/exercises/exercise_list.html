@@ -1,0 +1,12 @@
+{% extends "exercises/base.html" %}
+{% block title %}
+    Random exercises
+{% endblock %}
+{% block content %}
+    <h1>Random exercises</h1>
+    <ul>
+        {% for exercise in exercises %}
+            <li>{{ exercise.name }}: {{ exercise.get_body_regions }} ({{ exercise.rating }}/5)</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
