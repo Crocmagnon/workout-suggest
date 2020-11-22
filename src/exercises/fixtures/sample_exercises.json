@@ -318,5 +318,280 @@
         4
       ]
     }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 26,
+    "fields": {
+      "name": "V-sit",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 27,
+    "fields": {
+      "name": "Gainage (face + c\u00f4t\u00e9s)",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 28,
+    "fields": {
+      "name": "Gainage c\u00f4t\u00e9 plongeant",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 29,
+    "fields": {
+      "name": "Chercher c\u00f4t\u00e9s",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 30,
+    "fields": {
+      "name": "Chercher haut",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 31,
+    "fields": {
+      "name": "Chercher entre jambes",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 32,
+    "fields": {
+      "name": "Crunch (face + c\u00f4t\u00e9s)",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 33,
+    "fields": {
+      "name": "Ciseaux fesses d\u00e9coll\u00e9es",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 34,
+    "fields": {
+      "name": "Tendre jambes en avant",
+      "rating": 1,
+      "body_regions": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 35,
+    "fields": {
+      "name": "Squats",
+      "rating": 2,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 36,
+    "fields": {
+      "name": "Fentes",
+      "rating": 2,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 37,
+    "fields": {
+      "name": "Fentes saut\u00e9es",
+      "rating": 3,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 38,
+    "fields": {
+      "name": "Chaise",
+      "rating": 1,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 39,
+    "fields": {
+      "name": "Monter sur cube",
+      "rating": 3,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 40,
+    "fields": {
+      "name": "Saut grenouille",
+      "rating": 3,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 41,
+    "fields": {
+      "name": "Squats 1 jambe (l'autre en arri\u00e8re sur appui sur\u00e9lev\u00e9)",
+      "rating": 2,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 42,
+    "fields": {
+      "name": "Lev\u00e9 1 jambe \u00e0 4 pattes (arri\u00e8re + c\u00f4t\u00e9)",
+      "rating": 2,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 43,
+    "fields": {
+      "name": "Pouss\u00e9 \u00e9lastique (allong\u00e9 sur le dos, \u00e9lastique taille, pousser pieds 45\u00b0)",
+      "rating": 1,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 44,
+    "fields": {
+      "name": "Mollet (pointe pied)",
+      "rating": 1,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 45,
+    "fields": {
+      "name": "D\u00e9velopp\u00e9 halt\u00e8res debout",
+      "rating": 1,
+      "body_regions": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 46,
+    "fields": {
+      "name": "\u00c9l\u00e9vation halt\u00e8res frontale",
+      "rating": 1,
+      "body_regions": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 47,
+    "fields": {
+      "name": "\u00c9l\u00e9vation halt\u00e8res lat\u00e9rale",
+      "rating": 1,
+      "body_regions": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 48,
+    "fields": {
+      "name": "Butterfly halt\u00e8res (mains devant)",
+      "rating": 1,
+      "body_regions": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 49,
+    "fields": {
+      "name": "\u00c9cart\u00e9 \u00e9lastique (tendre \u00e9lastique devant nous bras ouverts)",
+      "rating": 1,
+      "body_regions": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 50,
+    "fields": {
+      "name": "\u00c9l\u00e9vation lat\u00e9rales \u00e9lastique",
+      "rating": 1,
+      "body_regions": [
+        6
+      ]
+    }
   }
 ]
