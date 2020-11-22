@@ -6,7 +6,7 @@
         <option name="rootFolder" value="$MODULE_DIR$/src" />
         <option name="settingsModule" value="workout_suggest/settings.py" />
         <option name="manageScript" value="manage.py" />
-        <option name="environment" value="&lt;map/&gt;" />
+        <option name="environment" value="&lt;map&gt;&#10;  &lt;entry&gt;&#10;    &lt;string&gt;ALLOWED_HOSTS&lt;/string&gt;&#10;    &lt;string&gt;192.168.0.23,localhost&lt;/string&gt;&#10;  &lt;/entry&gt;&#10;&lt;/map&gt;" />
         <option name="doNotUseTestRunner" value="true" />
         <option name="trackFilePattern" value="" />
       </configuration>
