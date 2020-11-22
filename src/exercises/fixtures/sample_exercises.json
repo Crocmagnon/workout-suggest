@@ -1,0 +1,322 @@
+[
+  {
+    "model": "exercises.bodyregion",
+    "pk": 1,
+    "fields": {
+      "name": "Bras"
+    }
+  },
+  {
+    "model": "exercises.bodyregion",
+    "pk": 2,
+    "fields": {
+      "name": "Pectoraux"
+    }
+  },
+  {
+    "model": "exercises.bodyregion",
+    "pk": 3,
+    "fields": {
+      "name": "Dos"
+    }
+  },
+  {
+    "model": "exercises.bodyregion",
+    "pk": 4,
+    "fields": {
+      "name": "Abdos"
+    }
+  },
+  {
+    "model": "exercises.bodyregion",
+    "pk": 5,
+    "fields": {
+      "name": "Bas du corps"
+    }
+  },
+  {
+    "model": "exercises.bodyregion",
+    "pk": 6,
+    "fields": {
+      "name": "\u00c9paules"
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 1,
+    "fields": {
+      "name": "Burpees",
+      "rating": 4,
+      "body_regions": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 2,
+    "fields": {
+      "name": "Curl biceps",
+      "rating": 1,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 3,
+    "fields": {
+      "name": "Triceps kick back halt\u00e8re",
+      "rating": 1,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 4,
+    "fields": {
+      "name": "Triceps extension verticale arri\u00e8re halt\u00e8re",
+      "rating": 1,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 5,
+    "fields": {
+      "name": "Dips",
+      "rating": 2,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 6,
+    "fields": {
+      "name": "Pompes classiques",
+      "rating": 2,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 7,
+    "fields": {
+      "name": "Pompes triceps",
+      "rating": 2,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 8,
+    "fields": {
+      "name": "Pompes c\u00f4t\u00e9",
+      "rating": 2,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 9,
+    "fields": {
+      "name": "Maintien halt\u00e8res en curl biceps 45'",
+      "rating": 1,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 10,
+    "fields": {
+      "name": "Curl biceps invers\u00e9s (main tourn\u00e9e 180\u00b0, on monte le dos de la main)",
+      "rating": 1,
+      "body_regions": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 11,
+    "fields": {
+      "name": "Soulev\u00e9 d'halt\u00e8re couch\u00e9 sur le dos",
+      "rating": 1,
+      "body_regions": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 12,
+    "fields": {
+      "name": "Pompes pointe de diamant",
+      "rating": 2,
+      "body_regions": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 13,
+    "fields": {
+      "name": "Pompes prise large",
+      "rating": 2,
+      "body_regions": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 14,
+    "fields": {
+      "name": "Jumping jack",
+      "rating": 5,
+      "body_regions": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 15,
+    "fields": {
+      "name": "Saut corde \u00e0 sauter",
+      "rating": 5,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 16,
+    "fields": {
+      "name": "Mont\u00e9e de genoux",
+      "rating": 5,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 17,
+    "fields": {
+      "name": "Debout couch\u00e9",
+      "rating": 4,
+      "body_regions": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 18,
+    "fields": {
+      "name": "Trottinage",
+      "rating": 5,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 19,
+    "fields": {
+      "name": "Talons fesses",
+      "rating": 5,
+      "body_regions": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 20,
+    "fields": {
+      "name": "Tirage halt\u00e8res 1 bras",
+      "rating": 1,
+      "body_regions": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 21,
+    "fields": {
+      "name": "Tirage \u00e9lastique horizontal",
+      "rating": 1,
+      "body_regions": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 22,
+    "fields": {
+      "name": "Superman",
+      "rating": 1,
+      "body_regions": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 23,
+    "fields": {
+      "name": "Tirage position superman",
+      "rating": 1,
+      "body_regions": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 24,
+    "fields": {
+      "name": "Lev\u00e9 halt\u00e8res couch\u00e9",
+      "rating": 1,
+      "body_regions": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "exercises.exercise",
+    "pk": 25,
+    "fields": {
+      "name": "Mountain climbers",
+      "rating": 3,
+      "body_regions": [
+        4
+      ]
+    }
+  }
+]
