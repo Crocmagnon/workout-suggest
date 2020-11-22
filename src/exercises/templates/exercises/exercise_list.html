@@ -19,7 +19,9 @@
                         {% include "exercises/rating_badge.html" %}
                     </li>
                 {% empty %}
-                    <li class="list-group-item list-group-item-danger">Aucun exercice trouvé</li>
+                    <li class="list-group-item list-group-item-danger">
+                        Aucun exercice trouvé
+                    </li>
                 {% endfor %}
             </ul>
         </div>
@@ -30,6 +32,12 @@
                 {{ form|crispy }}
                 <button class="btn btn-primary" type="submit">Filtrer</button>
             </form>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <a href="{% url "admin:login" %}">Modifier les exercices</a>
         </div>
     </div>
 {% endblock %}
