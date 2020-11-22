@@ -5,19 +5,31 @@
     Exercices
 {% endblock %}
 {% block content %}
-    <h1>Exercices</h1>
-    <ul class="list-group">
-        {% for exercise in exercises %}
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                {{ exercise.get_body_regions }}: {{ exercise.name }}
-                {% include "exercises/rating_badge.html" %}
-            </li>
-        {% endfor %}
-    </ul>
-    <hr>
-    <form action="" method="get">
-    <h2>Filtres</h2>
-        {{ form|crispy }}
-    <button class="btn btn-primary" type="submit">Filtrer</button>
-    </form>
+    <div class="row">
+        <div class="col-12">
+            <h1>Exercices</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-7">
+            <ul class="list-group">
+                {% for exercise in exercises %}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        {{ exercise.get_body_regions }}: {{ exercise.name }}
+                        {% include "exercises/rating_badge.html" %}
+                    </li>
+                {% empty %}
+                    <li class="list-group-item list-group-item-danger">Aucun exercice trouvé</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-lg-4 offset-lg-1">
+            <hr class="d-block d-lg-none">
+            <form action="" method="get">
+                <h2>Filtres</h2>
+                {{ form|crispy }}
+                <button class="btn btn-primary" type="submit">Filtrer</button>
+            </form>
+        </div>
+    </div>
 {% endblock %}
