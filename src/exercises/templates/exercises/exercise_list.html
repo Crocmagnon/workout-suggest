@@ -1,16 +1,23 @@
 {% extends "exercises/base.html" %}
+{% load crispy_forms_filters %}
+
 {% block title %}
-    Random exercises
+    Exercices
 {% endblock %}
 {% block content %}
-    <h1>Random exercises</h1>
-    <ul>
+    <h1>Exercices</h1>
+    <ul class="list-group">
         {% for exercise in exercises %}
-            <li>{{ exercise.get_body_regions }}: {{ exercise.name }} ({{ exercise.rating }}/5)</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ exercise.get_body_regions }}: {{ exercise.name }}
+                {% include "exercises/rating_badge.html" %}
+            </li>
         {% endfor %}
     </ul>
+    <hr>
     <form action="" method="get">
-    {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <h2>Filtres</h2>
+        {{ form|crispy }}
+    <button class="btn btn-primary" type="submit">Filtrer</button>
     </form>
 {% endblock %}

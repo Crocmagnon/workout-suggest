@@ -12,13 +12,22 @@ class RandomExercisesView(generic.ListView, FormMixin):
 
     def get_queryset(self):
         form = self.get_form()
-        base_queryset = self.get_base_queryset(form)
-        return base_queryset.order_by("?")[:5]
-
-    def get_base_queryset(self, form):
         if not form.is_valid():
-            return Exercise.objects.all()
-        data = form.cleaned_data
+            print(form.errors)
+            for field in form:
+                print(field.name, field.errors)
+            return Exercise.objects.order_by("?")[:5]
+
+        base_queryset = self.get_base_queryset(form)
+        filters = {}
+        body_regions = form.cleaned_data.get("body_regions")
+        if body_regions:
+            filters.update({"body_regions__in": body_regions})
+        number_of_exercises = form.cleaned_data.get("number_of_exercises")
+        return base_queryset.filter(**filters).order_by("?")[:number_of_exercises]
+
+    def get_base_queryset(self, valid_form):
+        data = valid_form.cleaned_data
         rating = data.get("rating")
         if rating == QueryForm.BALANCED_CHOICE:
             return Exercise.objects.get_balanced()
@@ -26,6 +35,8 @@ class RandomExercisesView(generic.ListView, FormMixin):
             return Exercise.objects.get_mostly_cardio()
         elif rating == QueryForm.STRENGTHENING_CHOICE:
             return Exercise.objects.get_mostly_strengthening()
+        else:
+            return Exercise.objects.all()
 
     def get_form_kwargs(self):
         kwargs = super().get_form_kwargs()

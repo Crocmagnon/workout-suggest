@@ -19,5 +19,5 @@ from exercises.views import RandomExercisesView
 
 app_name = "exercises"
 urlpatterns = [
-    path("random", RandomExercisesView.as_view(), name="random"),
+    path("", RandomExercisesView.as_view(), name="base"),
 ]

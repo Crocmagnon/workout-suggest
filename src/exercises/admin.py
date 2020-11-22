@@ -12,3 +12,5 @@ class BodyRegionAdmin(admin.ModelAdmin):
 @register(Exercise)
 class ExerciseAdmin(admin.ModelAdmin):
     list_display = ["name", "get_body_regions", "rating"]
+    list_filter = ["body_regions", "rating"]
+    search_fields = ["name"]

@@ -25,7 +25,7 @@ SECRET_KEY = "+9(768zpp2r(kj3tqawboetb#8!8t@1x$o1k0&$4!yvdzr%#u6"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["192.168.0.23", "localhost"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "crispy_forms",
     "custom_auth",
     "exercises",
 ]
@@ -122,3 +123,4 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 AUTH_USER_MODEL = "custom_auth.User"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
